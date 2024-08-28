@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <h1>HODLINFO</h1>
+                <div class="dropdown">
+                    <select id="currency">
+                        <option value="INR">INR</option>
+                    </select>
+                    <select id="crypto-select">
+                        <option value="btc">Bitcoin</option>
+                    </select>
+                    <div>BUY BTC</div>
+                </div>
+                <div>
+                    <button class="connect-btn">Connect Telegram</button>
+                </div>
+                
+            </div>
+            
+            <div class="price-container">
+                <div class="price-item">
+                    <span class="price-value">0.1%</span>
+                    <span class="price-label">5 Mins</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-value">0.96%</span>
+                    <span class="price-label">1 Hour</span>
+                </div>
+                <div class="best-price">
+                    <div class="price-label">Best Price to Trade</div>
+                    <span class="price-value">26,56,110</span>
+                    <span class="price-description">Average BTC/INR net price including commission</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-value">2.73%</span>
+                    <span class="price-label"> 1 Day</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-value">7.51%</span>
+                    <span class="price-label"> 7 Days</span>
+                </div>
+            </div>
+            
+        </header>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-data">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+        <div class="add-button">
+            <button>Add hodlinfo to home screen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
